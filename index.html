@@ -72,10 +72,11 @@
                   </div>
 
                   <div class="column has-text-centered">
+                    Paper and code coming soon.
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="#"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -86,7 +87,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="#"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -97,7 +98,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="#"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -107,8 +108,9 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
+                <!--
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -116,6 +118,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
+                -->
             </div>
           </div>
         </div>
@@ -163,52 +166,70 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title">Pipeline</h2>
+        <img src="static/images/PG2025_teaserpng.png" alt="teaser"/>
+        <h2 class="title">3D Scene Stylization Pipeline</h2>
         <div class="content has-text-justified">
           <p>
             Our method consists of two main stages: (1) a training stage, where we train a 3D scene representation using stylized multi-view images, and (2) an inference stage, where we generate stylized multi-view images from the trained 3D scene representation. The training stage involves re-training the initial 3D scene representation with stylized multi-view images, ensuring both style consistency and view consistency. The inference stage utilizes the trained model to generate stylized images from novel viewpoints.
           </p>
-          <p><img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/></p>
+          <p><img src="static/images/PG2025_overallpipeline.png" alt="Overall pipeline"/></p>
           <div class="subtitle has-text-centered">
-          First image description.
+          Overall 3D scene stylization pipeline.
           </div>
-          <p>
-            xxxxxx
-          </p>
         </div>
+
+        <h2 class="title">Multi-Region Stylization</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our method can apply 3D style transfer to different semantic regions based on segmentation masks, enabling spatially controlled stylization. In the example below, we apply three different styles to distinct regions while keeping the background area unchanged, demonstrating the ability to selectively transfer style while preserving certain parts of the original scene.
+          </p>
+          <p><img src="static/images/multiregion.png" alt="Overall pipeline"/></p>
+          <div class="subtitle has-text-centered">
+          Example of 3D scene stylization using our multi-region loss.
+          </div>
+        </div>
+
+        <h2 class="title">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate our method on various scenes and styles, demonstrating its effectiveness in generating high-quality stylized images with view consistency.
+          </p>
+          <p><img src="static/images/comparison.png" alt="Overall pipeline"/></p>
+          <!--<div class="subtitle has-text-centered">
+          Method comparisons.
+          </div>-->
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
 <!-- Image carousel -->
+<!--
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -218,6 +239,7 @@
 </div>
 </div>
 </section>
+-->
 <!-- End image carousel -->
 
 <!-- Youtube video -->
@@ -298,7 +320,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @inproceedings{fujiwara2025improved,
+            title     = {Improved 3D Scene Stylization via Text-Guided Generative Image Editing with Region-Based Control},
+            author    = {Haruo Fujiwara and Yusuke Mukuta and Tatsuya Harada},
+            booktitle = {Pacific Graphics 2025 Conference Papers},
+            year      = {2025}
+        }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
