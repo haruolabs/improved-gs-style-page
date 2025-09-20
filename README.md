@@ -1,4 +1,4 @@
-# Project page for the paper "[Improved 3D Scene Stylization via Text-Guided Generative Image Editing with Region-Based Control](https://haruolabs.github.io/improved-gs-style-page/)"
+# Project page for the paper ["Improved 3D Scene Stylization via Text-Guided Generative Image Editing with Region-Based Control"](https://haruolabs.github.io/improved-gs-style-page/) (PG2025)
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
